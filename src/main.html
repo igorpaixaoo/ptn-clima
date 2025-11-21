@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="cabeçalho">
+            <h1>Presidente Tancredo Neves</h1>
+            <span>By Igor</span>
+        </header>
+
+        <div class="ptn">
+            <h2 id="temp"></h2>
+            <h2 id="clima"></h2>
+            <h2 id="maxmin"></h2>
+            <div class="complementos">
+                <section class="section1">
+                    <div class="div-chance-chuva">
+                        <img src="util/icons/chuva.png">
+                        <h3 id="chance-chuva"></h3>
+                    </div>
+                    <div class="div-vento">
+                        <img src="util/icons/vento.png">
+                        <h3 id="vento"></h3>
+                    </div>
+                    
+                </section>
+                <section class="section2">
+                    <div class="div-humidity">
+                        <img src="util/icons/umidade.png">
+                        <h3 id="humidity"></h3>
+                    </div>
+                    <div class="div-sol">
+                        <img src="util/icons/lua.png">
+                        <h3 id="nascer-do-sol"></h3><h3>-</h3>
+                        <h3 id="por-do-sol"></h3>
+                    </div>
+
+                    
+                </section>
+            </div>
+            
+
+        </div>
+
+        <div class="dias">
+            <div class="dia1">
+                <p id="dia1"></p>
+                <p id="chance-chuva-dia1"></p>
+            </div>
+            <div class="dia2">
+                <p id="dia2"></p>
+                <p id="chance-chuva-dia2"></p>
+            </div>
+            <div class="dia3">
+                <p id="dia3"></p>
+                <p id="chance-chuva-dia3"></p>
+            </div>
+            <div class="dia4">
+                <p id="dia4"></p>
+                <p id="chance-chuva-dia4"></p>
+            </div>
+            <div class="dia5">
+                <p id="dia5"></p>
+                <p id="chance-chuva-dia5"></p>
+            </div>
+            <div class="dia6">
+                <p id="dia6"></p>
+                <p id="chance-chuva-dia6"></p>
+            </div>
+            <div class="dia7">
+                <p id="dia7"></p>
+                <p id="chance-chuva-dia7"></p>
+            </div>
+            
+        </div>
+            <div class="alerts" id="alerts">
+                <img src="util/alerta.png" width="100px" height="100px">
+            <div class="dados-alerta">
+                <h2 id="evento"></h2>
+                <h3 id="descricao"></h3>
+                <h3 id="duracao"></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="api.js"></script>
+</body>
+
+</html>
