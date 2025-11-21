@@ -8,12 +8,10 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
-
 .ptn{
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +25,7 @@
 
 .complementos{
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: space-around;
     height: 180px;
     width: 600px;
@@ -61,9 +59,7 @@ section div{
     justify-content: center;
     gap: 10px; 
     padding: 10px;
-    
 }
-
 
 #temp{
     font-size: 60pt;
@@ -71,8 +67,15 @@ section div{
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+
+#clima, #maxmin{
+    opacity: 60%;
+    font-size: 14pt;
+}
+
 #clima{
     text-transform: capitalize;
+    font-size: 16pt;
 }
 
 .alerts{
@@ -124,6 +127,13 @@ section div{
 
 .dias p{
     
+}
+
+#dia1, #dia2, #dia3,
+#dia4, #dia5, #dia6, #dia7{
+    font-size: 13pt;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 header{
