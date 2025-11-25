@@ -67,7 +67,6 @@ section div{
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 #clima, #maxmin{
     opacity: 60%;
     font-size: 14pt;
@@ -156,3 +155,62 @@ header span{
     font-size: 15pt;
 }
 
+@media screen and (max-width: 800px) {
+    .cabeçalho{
+        padding: 17px;
+    }
+    .cabeçalho h1{
+        font-size: 17pt;
+    }
+    .cabeçalho span{
+        font-size: 10pt;
+    }
+
+    .complementos{
+        width: 100%;
+        height: 180px;
+    }
+
+    .section1, .section2{
+        height: 100px;
+        width: 50%;
+        padding: 0px;
+        margin: 5px;
+        margin-top: 15px;
+        gap: 5px;
+        font-size: 10pt;
+    }
+
+    .section2{
+        width: 25%;
+    }
+
+    .section2 .div-sol h3{
+        font-size: 8pt;
+    }
+
+    .dias{
+        flex-wrap: wrap; 
+        margin-top: -35px;
+    }
+
+    .alerts{
+        top: 95%;
+        width: 85%;
+    }
+
+    #descricao{
+        display: none;
+    }
+
+    .alerts h2, h3{
+        width: 90%;
+        margin-top: 5px;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    .alerts h2{
+        font-size: 15pt;
+    }
+}
