@@ -61,8 +61,10 @@ async function getDataPtn() {
         //var remetenteValue = result.alerts[0].sender_name
         //remetenteAlert.innerText = remetenteValue
 
-        
-        var eventoValue = result.alerts[0].event
+        //verificando se existe alerts
+        if(result?.alerts){
+            var eventoValue = result.alerts[0].event
+        }
 
         // se o evento retornar nulo, <div> alert é desativada
         if(eventoValue != null){
