@@ -155,7 +155,7 @@ header span{
     font-size: 15pt;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .cabeçalho{
         padding: 17px;
     }
