@@ -85,31 +85,32 @@ async function getDataPtn() {
         chanceChuva.innerText = "Chuva: " + (result.daily[0].pop * 100) + "%"
 
         var dia1Value = new Date(result.daily[1].dt * 1000)
-        dia1.innerText = dias[dia1Value.getDay()] + ", " + dia1Value.getDate() + "/" + dia1Value.getMonth()
+        dia1.innerText = dias[dia1Value.getDay()] + ", " + dia1Value.getDate() + "/" + (dia1Value.getMonth()+1)
         maxminDia1.innerText = Math.round(result.daily[1].temp.min) + " / " + Math.round(result.daily[1].temp.max) + " ºC"
 
+
         var dia2Value = new Date(result.daily[2].dt * 1000)
-        dia2.innerText = dias[dia2Value.getDay()] + ", " + dia2Value.getDate() + "/" + dia2Value.getMonth()
+        dia2.innerText = dias[dia2Value.getDay()] + ", " + dia2Value.getDate() + "/" + (dia2Value.getMonth()+1)
         maxminDia2.innerText = Math.round(result.daily[2].temp.min) + " / " + Math.round(result.daily[2].temp.max) + " ºC"
         
         var dia3Value = new Date(result.daily[3].dt * 1000)
-        dia3.innerText = dias[dia3Value.getDay()] + ", " + dia3Value.getDate() + "/" + dia3Value.getMonth()
+        dia3.innerText = dias[dia3Value.getDay()] + ", " + dia3Value.getDate() + "/" + (dia3Value.getMonth()+1)
         maxminDia3.innerText = Math.round(result.daily[3].temp.min) + " / " + Math.round(result.daily[3].temp.max) + " ºC"
 
         var dia4Value = new Date(result.daily[4].dt * 1000)
-        dia4.innerText = dias[dia4Value.getDay()] + ", " + dia4Value.getDate() + "/" + dia4Value.getMonth()
+        dia4.innerText = dias[dia4Value.getDay()] + ", " + dia4Value.getDate() + "/" + (dia4Value.getMonth()+1)
         maxminDia4.innerText = Math.round(result.daily[4].temp.min) + " / " + Math.round(result.daily[4].temp.max) + " ºC"
 
         var dia5Value = new Date(result.daily[5].dt * 1000)
-        dia5.innerText = dias[dia5Value.getDay()] + ", " + dia5Value.getDate() + "/" + dia5Value.getMonth()
+        dia5.innerText = dias[dia5Value.getDay()] + ", " + dia5Value.getDate() + "/" + (dia5Value.getMonth()+1)
         maxminDia5.innerText = Math.round(result.daily[5].temp.min) + " / " + Math.round(result.daily[5].temp.max) + " ºC"
 
         var dia6Value = new Date(result.daily[6].dt * 1000)
-        dia6.innerText = dias[dia6Value.getDay()] + ", " + dia6Value.getDate() + "/" + dia6Value.getMonth()
+        dia6.innerText = dias[dia6Value.getDay()] + ", " + dia6Value.getDate() + "/" + (dia6Value.getMonth()+1)
         maxminDia6.innerText = Math.round(result.daily[6].temp.min) + " / " + Math.round(result.daily[6].temp.max) + " ºC"
 
         var dia7Value = new Date(result.daily[7].dt * 1000)
-        dia7.innerText = dias[dia7Value.getDay()] + ", " + dia7Value.getDate() + "/" + dia7Value.getMonth() 
+        dia7.innerText = dias[dia7Value.getDay()] + ", " + dia7Value.getDate() + "/" + (dia7Value.getMonth()+1) 
         maxminDia7.innerText = Math.round(result.daily[7].temp.min) + " / " + Math.round(result.daily[7].temp.max) + " ºC"
 
         chanceChuvaDia1.innerText = "Chuva: " + Math.round((result.daily[1].pop) * 100) + "%"
