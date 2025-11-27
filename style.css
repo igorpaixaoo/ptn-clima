@@ -5,212 +5,204 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
-.ptn{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.ptn h2{
-    font-weight: 400;
-}
-
-.complementos{
-    display: flex;
-    margin-top: 5px;
-    justify-content: space-around;
-    height: 180px;
-    width: 600px;
-}
-
-.section1, .section2{
-    flex: 1;
-    width: 50%;
-    border: 3px solid #a8afb4;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 10px;
-    background: white;
-    display: flex;
-}
-
-.section1, .section2{
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-section img{
-    width: 30px;
-}
-
-section div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
-    padding: 10px;
-}
-
-#temp{
-    font-size: 60pt;
-    font-weight: 700;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#clima, #maxmin{
-    opacity: 60%;
-    font-size: 14pt;
-}
-
-#clima{
-    text-transform: capitalize;
-    font-size: 16pt;
-}
-
-.alerts{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-95%);
-    color: white;
-    display: flex;
-    align-items: center;
-    background-color: #ec7d24;
-    border-radius: 15px;
-    width: 60%;
-    padding: 10px;
-}
-
-.alerts h2, h3{
-    width: 90%;
-    margin-top: 5px;
-    font-weight: 500;
-    text-align: justify;
-}
-
-.alerts #evento{
-    font-weight: 700;
-}
-
-#evento{
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.dias{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.dias div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 10px;
-}
-
-.dias p{
-    
-}
-
-#dia1, #dia2, #dia3,
-#dia4, #dia5, #dia6, #dia7{
-    font-size: 13pt;
-    font-weight: 700;
-    text-transform: uppercase;
+body{
+    background: #f2f4f5;
+    overflow-x: hidden;
 }
 
 header{
     display: flex;
-    align-items: center;
-    align-self: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 15px;
+    background: #28445c;
     color: white;
-    background-color: #28445c;
 }
-
 header h1{
+    font-size: 1.6rem;
     font-weight: 300;
-    opacity: 80%;
-    font-size: 23pt;
+    opacity: .9;
 }
-
 header span{
-    font-size: 15pt;
+    opacity: .7;
 }
 
-@media screen and (max-width: 768px) {
-    .cabeçalho{
-        padding: 17px;
-    }
-    .cabeçalho h1{
-        font-size: 17pt;
-    }
-    .cabeçalho span{
-        font-size: 10pt;
-    }
+.ptn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#temp{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#maxmin{
+    font-size: 1.2rem;
+    opacity: .7;
+}
+#clima{
+    margin-top: 5px;
+    font-size: 1.3rem;
+    opacity: .8;
+    text-transform: capitalize;
+}
+
+.complementos{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.section1,
+.section2{
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    border: 1px solid #c7cdd1;
+}
+
+.section1 div,
+.section2 div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section img{
+    width: 28px;
+}
+
+.dias{    
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dias div{
+    background: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+    font-size: 0.95rem;
+    border-radius: 10px;
+    white-space: nowrap
+}
+
+.dias p:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.alerts{
+    margin: 20px auto;
+    background: #ec7d24;
+    width: 90%;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+.alerts img{
+    width: 70px;
+    height: 70px;
+}
+.alerts h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.alerts h3{
+    font-size: .95rem;
+    opacity: .9;
+}
+
+@media (max-width: 768px){
+    #temp{
+        font-size: 3rem;
+    }
     .complementos{
-        width: 100%;
-        height: 180px;
+        flex-direction: column;
+        padding: 0 10px;
     }
-
-    .section1, .section2{
-        height: 100px;
-        width: 50%;
-        padding: 0px;
-        margin: 5px;
-        margin-top: 15px;
-        gap: 5px;
-        font-size: 10pt;
-    }
-
+    .section1,
     .section2{
-        width: 25%;
-    }
-
-    .section2 .div-sol h3{
-        font-size: 8pt;
+        padding: 12px;
     }
 
     .dias{
-        flex-wrap: wrap; 
-        margin-top: -35px;
+        display: flex;
+        overflow-x: auto;
+        padding: 10px 10px 20px 10px;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        
     }
 
+    .dias div{
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        width: 80px;
+        white-space: normal;
+    }
     .alerts{
-        top: 100%;
-        width: 85%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
     }
 
     #descricao{
         display: none;
     }
+}
 
-    .alerts h2, h3{
-        width: 90%;
-        margin-top: 5px;
-        font-weight: 500;
-        text-align: justify;
+@media (max-width: 480px){
+    header h1{
+        font-size: 1.1rem;
     }
-
-    .alerts h2{
-        font-size: 15pt;
+    #temp{
+        font-size: 3rem;
+    }
+    .dias div{
+        width: 70px;
+        padding: 8px;
+    }
+    .alerts img{
+        width: 55px;
+        height: 55px;
     }
 }
