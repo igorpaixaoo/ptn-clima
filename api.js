@@ -53,7 +53,6 @@ async function getDataPtn() {
 
         var porDoSolValue = new Date(result.current.sunset * 1000);
         porDoSol.innerText = porDoSolValue.getHours() + "h" + ":" + porDoSolValue.getMinutes() + "min";
-
         
         var ventoValue = result.current.wind_speed
         vento.innerText = "Vento: " + ventoValue + "m/s";
@@ -82,7 +81,7 @@ async function getDataPtn() {
         maxmin.innerText = "Min " + Math.round(result.daily[0].temp.min) + "º / " + "Max " + Math.round(result.daily[0].temp.max) + "º"
 
         //chance de chuva para o dia atual, pega o primeiro objeto .daily
-        chanceChuva.innerText = "Chuva: " + (result.daily[0].pop * 100) + "%"
+        chanceChuva.innerText = "Chuva: " + (result.daily[0].pop * 100).toFixed(0) + "%"
 
         var dia1Value = new Date(result.daily[1].dt * 1000)
         dia1.innerText = dias[dia1Value.getDay()] + ", " + dia1Value.getDate() + "/" + (dia1Value.getMonth()+1)
